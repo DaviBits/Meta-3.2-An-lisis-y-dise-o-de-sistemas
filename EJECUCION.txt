@@ -1,0 +1,160 @@
+META RPG - REGISTRO DE EJECUCIONES
+===================================
+Tres corridas capturadas desde la aplicacion de consola.
+Requiere un JDK y JAVA_HOME configurado.
+Ejecutar desde la raiz:
+  .\mvnw.cmd compile
+  java -cp target\classes com.example.metarpg.Main
+
+Corrida 1 - Mago Aria, Espada + Veneno + Bendicion, Goblin
+──────────────────────────────────────────────────────────
+==================================
+       META RPG - CONSOLA
+==================================
+Nombre del héroe: Clase: 1) Guerrero  2) Mago  3) Arquero  4) Pícaro
+Elige: Equipo (separa los números con coma; 0 para terminar):
+1) Espada (+10 ATK)  2) Armadura (+8 DEF)  3) Veneno (+5 daño y DOT)  4) Amuleto (+3 DEF, +2 HP/turno)  5) Bendición (+15% atributos)
+Añadir objeto: Añadir objeto: Añadir objeto: Añadir objeto: Enemigo: 1) Goblin  2) Orco  3) Dragón
+Elige: 
+Héroe: Aria (base) + Espada + Veneno + Bendición
+ATK: 46 | DEF: 8 | VEL: 17 | HP: 100
+Enemigo: Goblin salvaje | HP: 60
+
+=== COMBATE INICIADO ===
+--- TURNO 1 ---
+Estado | Aria (base) + Espada + Veneno + Bendición HP 100/100 ATK 46 DEF 8 VEL 17 || Goblin salvaje (base) HP 60/60
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Aria (base) + Espada + Veneno + Bendición usa AtaqueHechizo sobre Goblin salvaje
+  Daño: 33 | Efecto: hechizo + veneno
+  Goblin salvaje HP: 60 -> 27
+Veneno: Goblin salvaje recibe 5 de daño.
+Goblin salvaje (base) usa AtaquePuñalada sobre Aria
+  Daño: 10 | Efecto: puñalada
+  Aria HP: 100 -> 90
+--- TURNO 2 ---
+Estado | Aria (base) + Espada + Veneno + Bendición HP 90/100 ATK 46 DEF 8 VEL 17 || Goblin salvaje (base) HP 22/60
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Aria (base) + Espada + Veneno + Bendición usa AtaqueHechizo sobre Goblin salvaje
+  Daño: 33 | Efecto: hechizo + veneno
+  Goblin salvaje HP: 22 -> 0
+=== COMBATE FINALIZADO ===
+Ganador: Aria (base) + Espada + Veneno + Bendición (HP restante: 90)
+
+Corrida 2 - Guerrero Borin, Armadura + Amuleto, Orco
+────────────────────────────────────────────────────
+==================================
+       META RPG - CONSOLA
+==================================
+Nombre del héroe: Clase: 1) Guerrero  2) Mago  3) Arquero  4) Pícaro
+Elige: Equipo (separa los números con coma; 0 para terminar):
+1) Espada (+10 ATK)  2) Armadura (+8 DEF)  3) Veneno (+5 daño y DOT)  4) Amuleto (+3 DEF, +2 HP/turno)  5) Bendición (+15% atributos)
+Añadir objeto: Añadir objeto: Añadir objeto: Enemigo: 1) Goblin  2) Orco  3) Dragón
+Elige: 
+Héroe: Borin (base) + Armadura + Amuleto de regeneración
+ATK: 22 | DEF: 23 | VEL: 10 | HP: 120
+Enemigo: Orco | HP: 90
+
+=== COMBATE INICIADO ===
+--- TURNO 1 ---
+Estado | Borin (base) + Armadura + Amuleto de regeneración HP 120/120 ATK 22 DEF 23 VEL 10 || Orco (base) HP 90/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Borin (base) + Armadura + Amuleto de regeneración usa AtaqueEspada sobre Orco
+  Daño: 28 | ¡CRÍTICO! | Efecto: espada
+  Orco HP: 90 -> 62
+Orco (base) usa AtaqueEspada sobre Borin
+  Daño: 1 | Efecto: espada
+  Borin HP: 120 -> 119
+--- TURNO 2 ---
+Estado | Borin (base) + Armadura + Amuleto de regeneración HP 119/120 ATK 22 DEF 23 VEL 10 || Orco (base) HP 62/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Borin (base) + Armadura + Amuleto de regeneración usa AtaqueEspada sobre Orco
+  Daño: 28 | ¡CRÍTICO! | Efecto: espada
+  Orco HP: 62 -> 34
+Regeneración: Borin recupera 1 HP.
+Orco (base) usa AtaqueEspada sobre Borin
+  Daño: 1 | Efecto: espada
+  Borin HP: 120 -> 119
+--- TURNO 3 ---
+Estado | Borin (base) + Armadura + Amuleto de regeneración HP 119/120 ATK 22 DEF 23 VEL 10 || Orco (base) HP 34/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Borin (base) + Armadura + Amuleto de regeneración usa AtaqueEspada sobre Orco
+  Daño: 14 | Efecto: espada
+  Orco HP: 34 -> 20
+Regeneración: Borin recupera 1 HP.
+Orco (base) usa AtaqueEspada sobre Borin
+  Daño: 1 | Efecto: espada
+  Borin HP: 120 -> 119
+--- TURNO 4 ---
+Estado | Borin (base) + Armadura + Amuleto de regeneración HP 119/120 ATK 22 DEF 23 VEL 10 || Orco (base) HP 20/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Borin (base) + Armadura + Amuleto de regeneración usa AtaqueEspada sobre Orco
+  Daño: 14 | Efecto: espada
+  Orco HP: 20 -> 6
+Regeneración: Borin recupera 1 HP.
+Orco (base) usa AtaqueEspada sobre Borin
+  Daño: 1 | Efecto: espada
+  Borin HP: 120 -> 119
+--- TURNO 5 ---
+Estado | Borin (base) + Armadura + Amuleto de regeneración HP 119/120 ATK 22 DEF 23 VEL 10 || Orco (base) HP 6/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Borin (base) + Armadura + Amuleto de regeneración usa AtaqueEspada sobre Orco
+  Daño: 14 | Efecto: espada
+  Orco HP: 6 -> 0
+Regeneración: Borin recupera 1 HP.
+=== COMBATE FINALIZADO ===
+Ganador: Borin (base) + Armadura + Amuleto de regeneración (HP restante: 120)
+
+Corrida 3 - Arquera Lyra, Veneno + Bendicion, Orco
+──────────────────────────────────────────────────
+==================================
+       META RPG - CONSOLA
+==================================
+Nombre del héroe: Clase: 1) Guerrero  2) Mago  3) Arquero  4) Pícaro
+Elige: Equipo (separa los números con coma; 0 para terminar):
+1) Espada (+10 ATK)  2) Armadura (+8 DEF)  3) Veneno (+5 daño y DOT)  4) Amuleto (+3 DEF, +2 HP/turno)  5) Bendición (+15% atributos)
+Añadir objeto: Añadir objeto: Añadir objeto: Enemigo: 1) Goblin  2) Orco  3) Dragón
+Elige: 
+Héroe: Lyra (base) + Veneno + Bendición
+ATK: 29 | DEF: 9 | VEL: 25 | HP: 105
+Enemigo: Orco | HP: 90
+
+=== COMBATE INICIADO ===
+--- TURNO 1 ---
+Estado | Lyra (base) + Veneno + Bendición HP 105/105 ATK 29 DEF 9 VEL 25 || Orco (base) HP 90/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Lyra (base) + Veneno + Bendición usa AtaqueFlecha sobre Orco
+  Daño: 24 | Efecto: flecha precisa + veneno
+  Orco HP: 90 -> 66
+Veneno: Orco recibe 5 de daño.
+Orco (base) usa AtaqueEspada sobre Lyra
+  Daño: 10 | Efecto: espada
+  Lyra HP: 105 -> 95
+--- TURNO 2 ---
+Estado | Lyra (base) + Veneno + Bendición HP 95/105 ATK 29 DEF 9 VEL 25 || Orco (base) HP 61/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Lyra (base) + Veneno + Bendición usa AtaqueFlecha sobre Orco
+  Daño: 24 | Efecto: flecha precisa + veneno
+  Orco HP: 61 -> 37
+Veneno: Orco recibe 5 de daño.
+Orco (base) usa AtaqueEspada sobre Lyra
+  Daño: 20 | ¡CRÍTICO! | Efecto: espada
+  Lyra HP: 95 -> 75
+--- TURNO 3 ---
+Estado | Lyra (base) + Veneno + Bendición HP 75/105 ATK 29 DEF 9 VEL 25 || Orco (base) HP 32/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Lyra (base) + Veneno + Bendición usa AtaqueFlecha sobre Orco
+  Daño: 24 | Efecto: flecha precisa + veneno
+  Orco HP: 32 -> 8
+Veneno: Orco recibe 5 de daño.
+Orco (base) usa AtaqueEspada sobre Lyra
+  Daño: 10 | Efecto: espada
+  Lyra HP: 75 -> 65
+--- TURNO 4 ---
+Estado | Lyra (base) + Veneno + Bendición HP 65/105 ATK 29 DEF 9 VEL 25 || Orco (base) HP 3/90
+Acción: 1) Atacar  2) Defender  3) Usar poción (2)
+Elige: Lyra (base) + Veneno + Bendición usa AtaqueFlecha sobre Orco
+  Daño: 24 | Efecto: flecha precisa + veneno
+  Orco HP: 3 -> 0
+=== COMBATE FINALIZADO ===
+Ganador: Lyra (base) + Veneno + Bendición (HP restante: 65)
+
